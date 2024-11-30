@@ -56,7 +56,7 @@ For commit messages, we adopt the Angular commit message convention. Each commit
 ## Examples
 
 ```
-feat(auth): adding JWT authentication
+feat(2-auth): adding JWT authentication
 - Added JWT authentication functionality
 - Integrated JWT library for secure authentication
 ```

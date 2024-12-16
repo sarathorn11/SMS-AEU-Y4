@@ -15,8 +15,8 @@ Our Git branch naming format follows the pattern:
    - `bug`: For addressing bugs or issues.
    - `hotfix`: For urgent fixes that require immediate deployment.
    - `chore`: For general maintenance or non-code changes.
-2.  `<task-id>`: The ID of the corresponding OpenProject task or issue to indicate its relation.
-3.  `<description>`: A concise and descriptive phrase outlining the branch's purpose.
+2. `<task-id>`: The ID of the corresponding OpenProject task or issue to indicate its relation.
+3. `<description>`: A concise and descriptive phrase outlining the branch's purpose.
 
 ## Examples
 
@@ -30,11 +30,16 @@ Our Git branch naming format follows the pattern:
 For commit messages, we adopt the Angular commit message convention. Each commit message consists of a header, an optional body, and an optional footer, structured as follows:
 
 ```html
-<type>(<scope>): <subject>
-<BLANK-LINE>
-<body>
-<BLANK-LINE>
-<footer>
+<type
+  >(<scope
+    >):
+    <subject>
+      <BLANK-LINE>
+        <body>
+          <BLANK-LINE>
+            <footer></footer
+          ></BLANK-LINE></body></BLANK-LINE></subject></scope
+></type>
 ```
 
 ## Components
@@ -61,6 +66,17 @@ feat(2-auth): adding JWT authentication
 - Integrated JWT library for secure authentication
 ```
 
+### Naming Conventions
+
+- **Variables**: Use `camelCase` for variable names.
+  - Example: `let userName = "John";`
+- **Functions**: Use `camelCase` for function names.
+  - Example: `function calculateTotal() { ... }`
+- **Constants**: Use `UPPER_SNAKE_CASE` for constants.
+  - Example: `const API_URL = "https://example.com";`
+- **File Name**: Use `kebab-case` for files name.
+  - Example: `user-profile.js` (sometimes flexible)
+
 # Benefits
 
 - **Clarity**: Clear understanding of branch purposes and commit changes.
@@ -70,4 +86,4 @@ feat(2-auth): adding JWT authentication
 
 By adhering to these conventions, we aim to enhance our development process, facilitate collaboration, and maintain a well-structured codebase.
 
-Thank you for your cooperation.
+Ensure all code adheres to these conventions before submitting pull requests.

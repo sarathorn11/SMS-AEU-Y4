@@ -26,18 +26,19 @@
     - Install dotenv:
         npm i dotenv
 
+# Step 4: migration files
 
-# Step 4: migration files 
-    1. run: npx sequelize-cli migration:generate --name table-name 
+    1. run: npx sequelize-cli migration:generate --name table-name
     2. change file extension from **.js** to **.cjs**
     3. The prefix file must be **migrate-**. Example **migrate-user**
     4. To execute all migration file **npx sequelize-cli db:migrate**
     5. To drop migration tables "npx sequelize-cli db:migrate:undo:all"
 
-    
 # Step 5: seeder files
+
     1. run: **npx sequelize-cli seed:generate --name seed-name**
     2. Change file extension from **.js** to **.cjs**
     3. The prefix file must be **seed-**. Example **seed-user**
     4. To execute all seed files, run:** npx sequelize-cli db:seed:all**
-    
+
+For coding standards and contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).

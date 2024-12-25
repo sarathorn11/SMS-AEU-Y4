@@ -17,7 +17,12 @@ const sequelize = new Sequelize(
   dbConfig.database,
   dbConfig.username,
   dbConfig.password,
-  dbConfig
+  {
+    ...dbConfig,
+    define: {
+      ...dbConfig.model,
+    },
+  }
 )
 
 const importModels = async () => {

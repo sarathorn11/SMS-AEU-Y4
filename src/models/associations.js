@@ -1,7 +1,9 @@
 const associate = (models) => {
   const { User, Role } = models
-  Role.hasMany(User, { foreignKey: 'role_id' })
-  User.belongsTo(Role, { foreignKey: 'role_id' })
+
+  // associations between User and Role
+  Role.hasMany(User, { foreignKey: 'role_id', as: 'user' })
+  User.belongsTo(Role, { foreignKey: 'role_id', as: 'role' })
 }
 
 export default associate

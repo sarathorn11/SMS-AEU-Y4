@@ -5,15 +5,11 @@ module.exports = {
         role_id: 1,
         name: 'Admin',
         description: 'Administrator role with full access',
-        createdAt: new Date(),
-        updatedAt: new Date(),
       },
       {
         role_id: 2,
         name: 'User',
         description: 'Regular user role',
-        createdAt: new Date(),
-        updatedAt: new Date(),
       },
     ])
   },

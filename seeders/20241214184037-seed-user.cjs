@@ -9,24 +9,26 @@ module.exports = {
         first_name_en: 'John',
         last_name_en: 'Doe',
         email: 'admin@example.com',
-        password: 'hashed_password', // Make sure to hash passwords in real apps
+        password:
+          '$2a$12$QEGUn8fm296wHFXhht8OQeKdWl6m4H564ZB7oxGpSaM63u/rJ/V1u', // plain text is:  hashed_password
         role_id: 1,
         gender: 'Male',
         active: true,
-        createdAt: new Date(),
-        updatedAt: new Date(),
+        created_at: new Date(),
+        updated_at: new Date(),
       },
       {
         user_id: 2,
         first_name_en: 'Jane',
         last_name_en: 'Doe',
         email: 'user@example.com',
-        password: 'hashed_password', // Make sure to hash passwords in real apps
+        password:
+          '$2a$12$QEGUn8fm296wHFXhht8OQeKdWl6m4H564ZB7oxGpSaM63u/rJ/V1u', // plain text is:  hashed_password
         role_id: 2,
         gender: 'Female',
         active: true,
-        createdAt: new Date(),
-        updatedAt: new Date(),
+        created_at: new Date(),
+        updated_at: new Date(),
       },
     ])
   },

@@ -6,6 +6,6 @@ export async function getAllRoles(req, res, next) {
     const roles = await Role.findAll()
     return res.status(200).send(roles)
   } catch (err) {
-    next(err)
+    res.status(500).send({ message: 'Internal server error!', ...err })
   }
 }

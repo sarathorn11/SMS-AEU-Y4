@@ -1,4 +1,13 @@
 {
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
   "rules": {
     "semi": ["error", "never"],
     "quotes": ["error", "single"]

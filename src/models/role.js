@@ -17,7 +17,6 @@ export default (sequelize, DataTypes) => {
       },
     },
     {
-      timestamps: false,
       tableName: 'role',
     }
   )
